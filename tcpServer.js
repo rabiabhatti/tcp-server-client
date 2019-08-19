@@ -8,6 +8,7 @@ server.listen(9000, function() {
 
 
 function handleConnection(socket) {
+    console.log('socket', socket)
     const remoteAddress = socket.remoteAddress + ':' + socket.remotePort
     let clientData = []
 
